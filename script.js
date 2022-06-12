@@ -221,7 +221,7 @@ answers: [
 ]
 },
 {
-question: 'Billy conducts a survey of all of the students on his campus regarding the number of hours per week that they spend on homework. He then publishes his findings and states that this is the average number of hours students around the world spend on their homework each week. What is the mistake in Billy’s statement?',
+question: 'Vishant conducts a survey of all of the students on his campus regarding the number of hours per week that they spend on homework. He then publishes his findings and states that this is the average number of hours students around the world spend on their homework each week. What is the mistake in Vishant’s statement?',
 answers: [
 {text: 'His survey has sampling variability', correct: false},
 {text: 'His survey has nonresponse Bias', correct: false},
