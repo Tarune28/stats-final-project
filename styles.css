@@ -1,0 +1,257 @@
+*, *::before, *::after {
+  font-family: 'Mikado Bold DEMO', sans-serif;
+                                                
+}
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #967efb;
+  background-image: linear-gradient(62deg, #967efb 0%, #1ed6b4 100%);
+}
+
+.section1 {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  color: white;
+}
+
+.section2 {
+  position: fixed;
+  top: 0;
+  right: 15px;
+  color: white;
+}
+
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.question-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  border: .2px white solid;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  border-radius: 15px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+ 
+}
+
+.btn-grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.end {
+  display: inline;
+  justify-content: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  background: #323636;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 3em;
+  padding: 8px 16px;
+}
+
+.btn {
+
+  background: #323636;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+.btn:hover {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+  
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #323636 50%, rgb(0,0,0,0) 50%);
+    border: 1px #323636 solid;
+    transition: all 0.5s ease;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+
+
+.correct {
+  --hue: var(--hue-correct);
+  background-color: #1ed6b4;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+.wrong {
+  --hue: var(--hue-correct);
+  background-color: r;
+  color: white;
+  background-color: #cf4a4a;
+  border: none;
+  border-radius: 15px;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  
+  background: #323636;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin: 1rem;
+ 
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+
+
+
+.next-btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  overflow: hidden;
+  border: 2px white solid;
+  border-radius: 30px;
+  background-color:transparent;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.next-btn::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: 'NEXT';
+  transition: all .3s;
+}
+.next-btn::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "QUESTION";
+  background-color: white;
+  color: aqua;
+  transition: all .3s;
+}
+.next-btn:hover::before {
+  top: -60px;
+}
+.next-btn:hover::after {
+  top: 0;
+}
+
+
+
+
+.controls {
+
+
+
+  position:fixed;
+    bottom:0;
+    right:0;
+}
+
+.hide {
+  display: none;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
