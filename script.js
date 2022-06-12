@@ -25,6 +25,8 @@ function startGame() {
   end.classList.add('hide')
   container.classList.remove('hide')
   pointTitle.classList.remove('hide')
+  var value = parseInt(0, 10);
+  points.innerHTML = value;
   intro.classList.add('hide')
   setNextQuestion()
 }
@@ -99,45 +101,45 @@ const questions = [
     question: 'Before the 1936 US presidential election, a popular poll predicted that Alfred Landon would comfortably win against Franklin D. Roosevelt. The poll randomly sampled people from sources like telephone and car registration records, but the country was in an economic crisis, so many voters without those luxuries were not included in the poll. What form of bias is apparent here?',
     answers: [
       {text: 'Undercoverage', correct: true},
-      {text: 'Voluntary Response Bias', correct: false},
-      {text: 'Nonresponse Bias', correct: false},
-      {text: 'Response Bias', correct: false}
+      {text: 'Voluntary response bias', correct: false},
+      {text: 'Nonresponse bias', correct: false},
+      {text: 'Response bias', correct: false}
 ]
 },
 {
     question: 'A principal orders t-shirts and wants to check some of them to make sure they were printed properly. She randomly selects 2 of the 10 boxes of shirts and checks every shirt in those 2 boxes. What is the sampling method used here?',
     answers: [
-      {text: 'Simple Random Sampling', correct: false},
-      {text: 'Stratified Sampling', correct: false},
-      {text: 'Cluster Random Sampling', correct: true},
-      {text: 'Systematic Sampling', correct: false}
+      {text: 'Simple random sampling', correct: false},
+      {text: 'Stratified sampling', correct: false},
+      {text: 'Cluster random sampling', correct: true},
+      {text: 'Systematic sampling', correct: false}
 ]
 },
 {
     question: 'Each law firm in one state registers its phone number with the state court system. An employee of the state court system uses a computer to select 500 random registered phone numbers, and the law firms associated with those numbers will be selected for an audit. What form of sampling is used here?',
     answers: [
-      {text: 'Systematic Sampling', correct: false},
-      {text: 'Stratified Sampling', correct: false},
-      {text: 'Cluster Sampling', correct: false},
-      {text: 'None of the Above', correct: true}
+      {text: 'Systematic sampling', correct: false},
+      {text: 'Stratified sampling', correct: false},
+      {text: 'Cluster sampling', correct: false},
+      {text: 'None of the above', correct: true}
 ]
 },
 {
     question: 'Employees at a website want to select a sample of their users to ask for a donation. They randomly select one of the first 25 users each day and show them a message asking for a donation. They also show the message to every 25th user from that point on. What type of sampling method is used here?',
     answers: [
-    {text: 'Stratified Sampling', correct: false},
-    {text: 'Systematic Sampling', correct: true},
-    {text: 'Cluster Sampling', correct: false},
-    {text: 'None of the Above', correct: false}
+    {text: 'Stratified sampling', correct: false},
+    {text: 'Systematic sampling', correct: true},
+    {text: 'Cluster sampling', correct: false},
+    {text: 'None of the above', correct: false}
 ]
 },
 {
     question: 'A high school has a policy that students phones must be kept away during class. A principal used the school roster to poll a random sample of 50 students, and only 10%, percent said that they ever had their phone out during class. The next day, the principal observed classrooms and noticed that approximately 25%, percent of students had their phone out at some point during class. What form of bias is used here?',
     answers: [
     {text: 'Undercoverage', correct: false},
-    {text: 'Voluntary Response Bias', correct: false},
-    {text: 'Nonresponse Bias', correct: false},
-    {text: 'Response Bias', correct: true}
+    {text: 'Voluntary response bias', correct: false},
+    {text: 'Nonresponse bias', correct: false},
+    {text: 'Response bias', correct: true}
 ]
 },
 {
@@ -152,10 +154,10 @@ answers: [
 {
 question: 'Identify this definition to the term: The natural tendency for samples to differ sample to sample',
 answers: [
-{text: 'Population Proportion', correct: false},
+{text: 'Population proportion', correct: false},
 {text: 'Bias', correct: false},
-{text: 'Sampling Variability or Error', correct: true},
-{text: 'None of the Above', correct: false}
+{text: 'Sampling variability or error', correct: true},
+{text: 'None of the above', correct: false}
 ]
 },
 {
@@ -163,7 +165,7 @@ answers: [
 
 question: 'A good sample is _______',
 answers: [
-{text: 'A Census', correct: false},
+{text: 'A census', correct: false},
 {text: 'Large', correct: false},
 {text: 'Stratified', correct: false},
 {text: 'Representative', correct: true}
@@ -172,17 +174,17 @@ answers: [
 {
 question: 'Phil decides to conduct a survey to determine the public’s opinion of the water quality in the city on a scale of 1-10, with 1 being the worst and 10 being the best. He sends out an email with a link to the survey to a randomly selected sample of 5,000 residents. Only 700 of them responded and the results were either very extreme to the left or to the right.',
 answers: [
-{text: 'Voluntary Response Bias', correct: true},
-{text: 'Response Bias', correct: false},
-{text: 'Nonresponse Bias', correct: false},
-{text: 'Bias from Convenience Samples', correct: false}
+{text: 'Voluntary response bias', correct: true},
+{text: 'Response bias', correct: false},
+{text: 'Nonresponse bias', correct: false},
+{text: 'Bias from convenience samples', correct: false}
 ]
 },
 {
 question: 'Workers for NASA want to see a town approval rating of their work in space, so they conduct a survey using stratified sampling. They first divide the town into multiple strata and perform a census on one randomly selected stratum to obtain their final sample. What error did they make?',
 answers: [
-{text: 'They mixed Stratified and SRS', correct: false},
-{text: 'The mixed Stratified and Cluster Sampling', correct: true},
+{text: 'They mixed stratified and SRS', correct: false},
+{text: 'The mixed stratified and cluster sampling', correct: true},
 {text: 'There is undercoverage', correct: false},
 {text: 'There are no errors', correct: false}
 ]
@@ -190,18 +192,18 @@ answers: [
 {
 question: 'Which of the following is not a type of bias?',
 answers: [
-{text: 'Response Bias', correct: false},
-{text: 'Nonresponse Bias', correct: false},
+{text: 'Response bias', correct: false},
+{text: 'Nonresponse bias', correct: false},
 {text: 'Overcoverage', correct: true},
-{text: 'Bias from Convenience Sampling', correct: false}
+{text: 'Bias from convenience sampling', correct: false}
 ]
 },
 {
 question: 'Joseph conducts a sample survey on the favorite ice cream flavors of his town, and to do so, he uses the cluster sampling technique. He divides his town into multiple representative clusters and conducts a census on one randomly selected cluster. What error did Joseph make?',
 answers: [
-{text: 'His survey has bias from Convenience Sampling', correct: false},
-{text: 'His survey has Nonresponse Bias', correct: false},
-{text: 'He mixes Cluster Sampling and SRS', correct: false},
+{text: 'His survey has bias from convenience sampling', correct: false},
+{text: 'His survey has nonresponse bias', correct: false},
+{text: 'He mixes cluster sampling and SRS', correct: false},
 {text: 'There are no mistakes', correct: true}
 ]
 },
@@ -211,14 +213,14 @@ answers: [
 {text: 'Reduces natural variation', correct: true},
 {text: 'cost efficiency', correct: false},
 {text: 'Easiest to conduct', correct: false},
-{text: 'None of the Above', correct: false}
+{text: 'None of the above', correct: false}
 ]
 },
 {
 question: 'Billy conducts a survey of all of the students on his campus regarding the number of hours per week that they spend on homework. He then publishes his findings and states that this is the average number of hours students around the world spend on their homework each week. What is the mistake in Billy’s statement?',
 answers: [
 {text: 'His survey has sampling variability', correct: false},
-{text: 'His survey has Nonresponse Bias', correct: false},
+{text: 'His survey has nonresponse Bias', correct: false},
 {text: 'His results cannot be generalized', correct: true},
 {text: 'There is no mistake', correct: false}
 ]
