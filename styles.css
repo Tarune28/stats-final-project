@@ -1,5 +1,6 @@
 *, *::before, *::after {
-  font-family: 'Mikado Bold DEMO', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+
                                                 
 }
 
@@ -14,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  overflow: hidden;
+  overflow: none;
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -23,11 +24,28 @@ body {
   background-image: linear-gradient(62deg, #967efb 0%, #1ed6b4 100%);
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  
+}
+span {
+    font-family: 'DM Sans', sans-serif;
+  }
+
 .section1 {
   position: fixed;
   top: 0;
   left: 15px;
   color: white;
+}
+
+
+
+.row {
+  display: inline;
+  text-align: center;
 }
 
 .section2 {
@@ -42,6 +60,8 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+
 
 .question-container {
   max-width: 1500px;
@@ -72,7 +92,8 @@ body {
 }
 
 .end {
-  display: inline;
+  display: inline-block;
+  text-align: center;
   justify-content: center;
 }
 
@@ -88,33 +109,39 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-size: 3em;
+  font-size: 2em;
   padding: 8px 16px;
+}
+
+.btns:hover {
+  background-color: transparent;
+  border: #323636 1px solid;
+  transition: .5s ease;
 }
 
 .btn {
 
   background: #323636;
   color: #fff;
-  border: none;
+  border: 1px #323636 solid;
   border-radius: 15px;
-  margin: 10px;
+ 
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 8px 16px;
+  padding: 8px;
 }
 .btn:hover {
-    border: none;
+  
     display: inline-block;
-    padding: 8px 16px;
+
     vertical-align: middle;
   
     text-decoration: none;
     color: white;
     background: linear-gradient(to right, #323636 50%, rgb(0,0,0,0) 50%);
     border: 1px #323636 solid;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     background-size: 200% 100%;
     background-position: right bottom;
     text-align: center;
@@ -125,30 +152,27 @@ body {
 
 
 .correct {
-  --hue: var(--hue-correct);
   background-color: #1ed6b4;
   color: #fff;
-  border: none;
   border-radius: 15px;
-  margin: 1rem;
+  border: none;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 8px 16px;
+  padding: 8px;
 }
 
 .wrong {
-  --hue: var(--hue-correct);
   background-color: r;
   color: white;
   background-color: #cf4a4a;
   border: none;
   border-radius: 15px;
-  margin: 1rem;
+  
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 8px 16px;
+  padding: 8px;
 }
 
 .next-btn {

@@ -1,5 +1,6 @@
 
 const nextButton = document.getElementById('next-btn')
+const answerButton = document.getElementById('btn')
 const questionContainerElement = document.getElementById('question-container')
 const container = document.getElementById('container')
 const questionElement = document.getElementById('question')
@@ -10,6 +11,7 @@ const pointTitle = document.getElementById('section2')
 const points = document.getElementById('points')
 const end = document.getElementById('endgame')
 const finalpt = document.getElementById('fp')
+const page = document.getElementById('fp')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -73,7 +75,6 @@ function selectAnswer(e) {
     var value = points.innerHTML;
     finalpt.innerHTML = value;
     end.classList.remove('hide')
-    container.classList.add('hide')
   }
 }
 
@@ -89,6 +90,9 @@ function setStatusClass(element, correct, val) {
     element.classList.add('wrong')
     element.classList.remove('btn')
   }
+  page.classList.remove('correct');
+  page.classList.remove('wrong');
+
 }
 
 function clearStatusClass(element) {
