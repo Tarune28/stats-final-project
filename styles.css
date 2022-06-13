@@ -149,6 +149,18 @@ span {
     
 }
 
+.btne {
+
+  background: #323636;
+  color: #fff;
+  border: 1px #323636 solid;
+  border-radius: 15px;
+ 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 8px;
+}
 
 
 .correct {

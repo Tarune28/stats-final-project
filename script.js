@@ -49,8 +49,12 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct
 
     }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    
+     // alert("Tr");
+      button.addEventListener('click', selectAnswer);
+      answerButtonsElement.appendChild(button);
+
+        
   })
 }
 
@@ -65,10 +69,20 @@ function resetState() {
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
+  //alert(correct);
  // setStatusClass(document.body, correct, 10)
-  Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct, 10)
-  })
+  if(nextButton.classList.contains('hide')){
+    setStatusClass(selectedButton, correct, 10)
+    Array.from(answerButtonsElement.children).forEach(button => {
+      if(button.dataset.correct){
+        setStatusClass(button, button.dataset.correct, 0)
+      }
+      else {
+        button.classList.remove('btn');
+        button.classList.add('btne');
+      }
+    })
+  }
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
@@ -79,7 +93,7 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct, val) {
-  clearStatusClass(element)
+  //clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
     var value = points.innerHTML;
@@ -90,8 +104,7 @@ function setStatusClass(element, correct, val) {
     element.classList.add('wrong')
     element.classList.remove('btn')
   }
-  page.classList.remove('correct');
-  page.classList.remove('wrong');
+
 
 }
 
