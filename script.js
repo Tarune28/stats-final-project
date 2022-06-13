@@ -227,7 +227,7 @@ answers: [
 {
 question: 'What is the use of stratified sampling?',
 answers: [
-{text: 'Reduces natural variation', correct: true},
+{text: 'Reduces sampling variability', correct: true},
 {text: 'cost efficiency', correct: false},
 {text: 'Easiest to conduct', correct: false},
 {text: 'None of the above', correct: false}
