@@ -243,12 +243,12 @@ answers: [
 ]
 },
 {
-question: 'A basketball association needs to pick 10 players from 10 teams for its all-star roster. They randomly choose 1 player from each team to make up their roster. Is this an SRS?',
+question: 'Poppy wanted to conduct a survey on how many people watched TV regulary. She travelled to a grocery store and decided to select every 5th person that enters the store to be a participant in the survey. She spots her friend and decides to use them as her first participant in the survey. What sampling technique is this and is it done properly?',
 answers: [
-{text: 'Yes each player has the same chances', correct: false},
-{text: 'Yes each sample has the same chances', correct: false},
-{text: 'No each player does not have the same chances', correct: false},
-{text: 'No each sample does not have the same chances', correct: true}
+    {text: 'Yes this is systematic and is done with no error', correct: false},
+    {text: 'Yes this is cluster and is done with no error', correct: false},
+    {text: 'No this is systematic and the first person is not randomly chosen', correct: true},
+    {text: 'No this is an SRS and the selection is not random', correct: true}
 ]
 }
 
