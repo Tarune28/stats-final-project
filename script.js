@@ -245,10 +245,10 @@ answers: [
 {
 question: 'Poppy wanted to conduct a survey on how many people watched TV regulary. She travelled to a grocery store and decided to select every 5th person that enters the store to be a participant in the survey. She spots her friend and decides to use them as her first participant in the survey. What sampling technique is this and is it done properly?',
 answers: [
-    {text: 'Yes this is systematic and is done with no error', correct: false},
-    {text: 'Yes this is cluster and is done with no error', correct: false},
-    {text: 'No this is systematic and the first person is not randomly chosen', correct: true},
-    {text: 'No this is an SRS and the selection is not random', correct: false}
+    {text: 'systematic / no error', correct: false},
+    {text: 'cluster / no error', correct: false},
+    {text: 'systematic / the first person is not randomly chosen', correct: true},
+    {text: 'SRS / the selection is not random', correct: false}
 ]
 }
 
