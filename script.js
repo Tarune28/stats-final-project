@@ -248,7 +248,7 @@ answers: [
     {text: 'Yes this is systematic and is done with no error', correct: false},
     {text: 'Yes this is cluster and is done with no error', correct: false},
     {text: 'No this is systematic and the first person is not randomly chosen', correct: true},
-    {text: 'No this is an SRS and the selection is not random', correct: true}
+    {text: 'No this is an SRS and the selection is not random', correct: false}
 ]
 }
 
