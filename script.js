@@ -189,7 +189,7 @@ answers: [
 ]
 },
 {
-question: 'Phil decides to conduct a survey to determine the public’s opinion of the water quality in the city on a scale of 1-10, with 1 being the worst and 10 being the best. He sends out an email with a link to the survey to a randomly selected sample of 5,000 residents. Only 700 of them responded and the results were either very extreme to the left or to the right.',
+question: 'Phil decides to conduct a survey to determine the public’s opinion of the water quality in the city on a scale of 1-10, with 1 being the worst and 10 being the best. He sends out an email with a link to the survey to a randomly selected sample of 5,000 residents. Only 700 of them responded and the results were either very extreme to the left or to the right. What form of bias is present?',
 answers: [
 {text: 'Voluntary response bias', correct: true},
 {text: 'Response bias', correct: false},
@@ -234,7 +234,7 @@ answers: [
 ]
 },
 {
-question: 'Vishant conducts a survey of all of the students on his campus regarding the number of hours per week that they spend on homework. He then publishes his findings and states that this is the average number of hours students around the world spend on their homework each week. What is the mistake in Vishant’s statement?',
+question: 'Joe conducts a survey of all of the students on his campus regarding the number of hours per week that they spend on homework. He then publishes his findings and states that this is the average number of hours students around the world spend on their homework each week. What is the mistake in Joet’s statement?',
 answers: [
 {text: 'His survey has sampling variability', correct: false},
 {text: 'His survey has nonresponse Bias', correct: false},
